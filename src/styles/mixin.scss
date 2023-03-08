@@ -1,0 +1,5 @@
+@mixin fullColor($color, $bgColor, $borderColor) {
+  color: $color;
+  background-color: $bgColor;
+  border-color: $borderColor;
+};
