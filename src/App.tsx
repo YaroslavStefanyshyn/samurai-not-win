@@ -16,7 +16,7 @@ function App() {
   const handleStart = useCallback(() => {
     setOnSquareNum([])
     setStartGame(true)
-  }, [selectedSquares])
+  }, [])
 
   const handleRestart = useCallback(() => setOnSquareNum([]), [])
 
