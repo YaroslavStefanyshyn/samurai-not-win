@@ -1,6 +1,7 @@
 import React, {memo, useCallback} from "react";
 import Select, {SingleValue} from "react-select";
 import {useGetModeData} from "../../hooks/useGetModeData";
+import {mockData} from "../../constants";
 
 export interface SelectedValue {
   field: number;
@@ -26,7 +27,7 @@ export default memo(({ ...props }: IProps) => {
   return (
     <div className="App_change-mode__selector">
       <Select
-        options={modeData ?? []}
+        options={modeData ?? mockData}
         onChange={handleTypeSelect}
         value={modeData?.find(option => option.value === props.selectedOption)}
         placeholder={'Pick mode'}
